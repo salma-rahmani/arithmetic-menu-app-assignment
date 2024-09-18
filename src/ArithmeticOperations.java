@@ -76,9 +76,9 @@ public class ArithmeticOperations {
 
                 case 5:
                     if (listOfNumbers.size() > 0) {
-                        int multi = 1;
-                        for (int num : listOfNumbers) {
-                            multi *= num;
+                        int multi = listOfNumbers.get(0);
+                        for (int i = 1; i < listOfNumbers.size(); i++) {
+                            multi *= listOfNumbers.get(i);
                         }
                         System.out.println("The multiplication result is: " + multi);
                     } else {
