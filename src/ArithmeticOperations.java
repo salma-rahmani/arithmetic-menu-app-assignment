@@ -64,11 +64,11 @@ public class ArithmeticOperations {
 
                 case 4:
                     if (listOfNumbers.size() > 0) {
-                        int difference = listOfNumbers.get(0);
+                        int sub = listOfNumbers.get(0);
                         for (int i = 1; i < listOfNumbers.size(); i++) {
-                            difference -= listOfNumbers.get(i);
+                            sub -= listOfNumbers.get(i);
                         }
-                        System.out.println("The subtraction result is: " + difference);
+                        System.out.println("The subtraction result is: " + sub);
                     } else {
                         System.out.println("No numbers to subtract.");
                     }
@@ -76,11 +76,11 @@ public class ArithmeticOperations {
 
                 case 5:
                     if (listOfNumbers.size() > 0) {
-                        int product = 1;
+                        int multi = 1;
                         for (int num : listOfNumbers) {
-                            product *= num;
+                            multi *= num;
                         }
-                        System.out.println("The multiplication result is: " + product);
+                        System.out.println("The multiplication result is: " + multi);
                     } else {
                         System.out.println("No numbers to multiply.");
                     }
